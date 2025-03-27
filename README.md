@@ -1,2 +1,2 @@
-# VatsimKnowledgebaseAI
-vatsim knoweldge base ai
+# this is the start command for the docker container
+docker run -dit --name my-apache-app -p 8080:80 --mount type=bind,source="C:\repositories\debug\gptsamples\vatsim",target=/usr/local/apache2/htdocs/ httpd
