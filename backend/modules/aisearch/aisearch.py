@@ -33,4 +33,6 @@ class aisearch():
         
         result_final = [res async for res in results if res.get("content") is not None]
 
+        await aiseach_client.close()
+
         return result_final
